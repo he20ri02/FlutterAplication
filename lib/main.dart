@@ -1,27 +1,32 @@
+//docs.flutter.dev/development
 // ignore_for_file: prefer_const_constructors
 import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/screens/StackDatos.dart';
 
 //importar librerias de las demas paginas
+import 'package:flutter_app/screens/StackDatos.dart';
 import 'package:flutter_app/screens/stackScreen.dart';
 import 'screens/dataScreen.dart';
+import 'screens/formScreen.dart';
+import 'screens/formUiScreen.dart';
 import 'screens/secondScreen.dart';
 import 'screens/thirdScreen.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(MaterialApp( //material design de android
     debugShowCheckedModeBanner: false,
     title: 'Flutter Demo',
     initialRoute: '/',
     routes:{
-      '/' : (context) => const HomePage(),
+      //'/' : (context) => const HomePage(),
+      '/' : (context) => const FormUi(),
       '/second' : (context) => const SecondPage(),
       '/third' : (context) => const ThirdPage(),
       '/datos' : (context) => const DatosPage(),
       '/stack' : (context) => const TestStack(),
       '/stackDatos' : (context) => const StackDatos(),
+      
     } ,
     //home: HomePage(),
   ));
