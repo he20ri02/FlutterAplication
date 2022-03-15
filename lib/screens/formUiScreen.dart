@@ -27,7 +27,7 @@ class _FormUiState extends State<FormUi> {
   @override
 Widget build(BuildContext context) {
 return Scaffold(
-  //backgroundColor: Color.fromARGB(255, 192, 234, 238), //color de bacground
+  backgroundColor:Color.fromARGB(255, 192, 234, 238), //color de bacground
 body: Center(
 child: Form(
 child: Column(
@@ -112,7 +112,7 @@ padding: const EdgeInsets.symmetric(horizontal: 20.0),
 margin: const EdgeInsets.symmetric(horizontal: 30.0),
 decoration: BoxDecoration(
 borderRadius: BorderRadius.circular(10),
-border: Border.all(color: Colors.grey, width: 2.0)
+border: Border.all(color: Color.fromARGB(255, 115, 176, 187), width: 2.0)
 
 ),
 child: TextFormField(
@@ -124,7 +124,7 @@ border: InputBorder.none,
 //icon: Icon(Icons.contact_mail),
 prefixIcon: Icon(Icons.contact_mail),
 labelText: 'Correo',
-hintText: 'micorreo@correo.com'
+hintText: 'angelgm.ti2@utsjr.edu.mx'
 ),
 ),
 );
